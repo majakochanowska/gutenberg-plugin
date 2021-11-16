@@ -4,11 +4,92 @@
  * CSS for both Frontend+Backend.
  */
 
-.wp-block-cgb-block-accordion  {
-  background: $red;
-  border: 0.2rem solid $black;
-  color: $black;
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem;
+@import '../common.scss';
+
+.wp-block-gutenberg-accordion {
+  margin-bottom: 20px;
+
+  &__title {
+    position: relative;
+    width: 100%;
+    padding: 14px 20px 14px 46px;
+    text-align: left;
+    background-color: $blue !important;
+    border-radius: 5px;
+    border: none;
+
+    > * {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 18px;
+      color: white;
+    }
+
+    &--active {
+      border-radius: 5px 5px 0 0;
+
+      .wp-block-gutenberg-accordion__icon
+        &::after {
+          display: none;
+        }
+    }
+
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    height: 12px;
+    width: 12px;
+    margin: 0;
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      box-sizing: border-box;
+      border-style: solid;
+    }
+
+    &::before {
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      border-width: 2px 0 0 0;
+    }
+
+    &::after {
+      left: 50%;
+      bottom: 0;
+      top: 0;
+      transform: translateX(-50%);
+      border-width: 0 0 0 2px;
+    }
+  }
+
+  &__content {
+    visibility: hidden;
+    padding: 0px 20px;
+    max-height: 0;
+    border-radius: 0 0 5px 5px;
+    background-color: $grey-light;
+    border: 1px solid $grey;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    &--active {
+      visibility: visible;
+      padding: 14px 20px;
+      max-height: 100%;
+      opacity: 1;
+    }
+  }
 }

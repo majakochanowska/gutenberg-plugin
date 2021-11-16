@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: accordion — CGB Gutenberg Block Plugin
+ * Plugin Name: Accordion
  * Plugin URI: https://github.com/ahmadawais/create-guten-block/
  * Description: accordion — is a Gutenberg plugin created via create-guten-block.
  * Author: mrahmadawais, maedahbatool
@@ -9,7 +9,7 @@
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  *
- * @package CGB
+ * @package gutenberg
  */
 
 // Exit if accessed directly.

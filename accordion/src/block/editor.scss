@@ -5,11 +5,22 @@
  * which makes it higher in priority.
  */
 
-.wp-block-cgb-block-accordion  {
-  background: $green;
-  border: 0.2rem solid $black;
-  color: $black;
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem;
+.editor-styles-wrapper .wp-block-gutenberg-accordion {
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &__title
+      > * {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 18px;
+        line-height: 1.5;
+        color: white;
+      }
+  }
+
+.block-library-heading-level-dropdown.accordion__dropdown .components-popover__content {
+  min-width: 200px;
 }
