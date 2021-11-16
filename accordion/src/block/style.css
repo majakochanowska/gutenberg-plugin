@@ -34,8 +34,7 @@
   border-radius: 5px 5px 0 0;
 }
 
-.wp-block-gutenberg-accordion__icon
-.wp-block-gutenberg-accordion__title--active::after {
+.wp-block-gutenberg-accordion__title--active .wp-block-gutenberg-accordion__icon::after {
   display: none;
 }
 

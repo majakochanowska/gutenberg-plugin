@@ -28,8 +28,7 @@
     &--active {
       border-radius: 5px 5px 0 0;
 
-      .wp-block-gutenberg-accordion__icon
-        &::after {
+      .wp-block-gutenberg-accordion__icon::after {
           display: none;
         }
     }
