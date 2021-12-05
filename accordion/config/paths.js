@@ -16,6 +16,7 @@ module.exports = {
 	dotenv: resolvePlugin( '.env' ),
 	pluginSrc: resolvePlugin( 'src' ), // Plugin src folder path.
 	pluginBlocksJs: resolvePlugin( 'src/blocks.js' ),
+	pluginFrontendJs: resolvePlugin( 'src/frontend.js' ),
 	yarnLockFile: resolvePlugin( 'yarn.lock' ),
 	pluginDist: resolvePlugin( '.' ), // We are in ./dist folder already so the path '.' resolves to ./dist/.
 };

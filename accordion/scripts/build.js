@@ -34,6 +34,7 @@ const formatWebpackMessages = require( cgbDevUtilsPath + '/formatWebpackMessages
 // Build file paths.
 const theCWD = process.cwd();
 const fileBuildJS = path.resolve( theCWD, './dist/blocks.build.js' );
+const fileFrontendBuildJS = path.resolve( theCWD, './dist/frontend.build.js' );
 const fileEditorCSS = path.resolve( theCWD, './dist/blocks.editor.build.css' );
 const fileStyleCSS = path.resolve( theCWD, './dist/blocks.style.build.css' );
 
@@ -119,10 +120,13 @@ async function build( webpackConfig ) {
 			`${ chalk.dim( '— ./dist/' ) }`,
 			`${ chalk.green( 'blocks.build.js' ) }`,
 			'\n',
+			getFileSize( fileFrontendBuildJS ),
+			`${ chalk.dim( '— ./dist/' ) }`,
+			`${ chalk.green( 'frontend.build.js' ) }`,
+			'\n',
 			getFileSize( fileEditorCSS ),
 			`${ chalk.dim( '— ./dist/' ) }`,
 			`${ chalk.green( 'blocks.editor.build.css' ) }`,
-
 			'\n',
 			getFileSize( fileStyleCSS ),
 			`${ chalk.dim( '— ./dist/' ) }`,

@@ -88,7 +88,7 @@ function accordion_gutenberg_block_assets() { // phpcs:ignore
 
 function enqueue_frontend_script() {
 
-	wp_enqueue_script( 'accordion-gutenberg-frontend-js', esc_url( plugins_url( 'scripts/frontend.js', dirname( __FILE__ ) ) ), array(), '1.0.0', true );
+	wp_enqueue_script( 'accordion-gutenberg-frontend-js', esc_url( plugins_url( 'dist/frontend.build.js', dirname( __FILE__ ) ) ), array(), '1.0.0', true );
 }
 
 // Hook: Block assets.
