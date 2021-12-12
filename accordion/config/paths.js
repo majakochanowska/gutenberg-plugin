@@ -19,4 +19,5 @@ module.exports = {
 	pluginFrontendJs: resolvePlugin( 'src/frontend.js' ),
 	yarnLockFile: resolvePlugin( 'yarn.lock' ),
 	pluginDist: resolvePlugin( '.' ), // We are in ./dist folder already so the path '.' resolves to ./dist/.
+	pluginCss:  resolvePlugin( 'src/css.js' ),
 };
