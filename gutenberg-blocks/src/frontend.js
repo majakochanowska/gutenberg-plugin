@@ -3,3 +3,4 @@
  */
 
 import './accordion/frontend.js';
+import './button/frontend.js';
