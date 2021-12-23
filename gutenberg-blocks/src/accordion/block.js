@@ -1,7 +1,3 @@
-//  Import CSS.
-import './editor.scss';
-import './style.scss';
-
 const { registerBlockType } = wp.blocks;
 const { __, sprintf } = wp.i18n;
 const { RichText, InnerBlocks, BlockControls } = wp.blockEditor;

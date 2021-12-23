@@ -3,7 +3,7 @@
  * Plugin Name: Gutenberg Blocks
  * Author: Maja Kochanowska
  * Description: Plugin with Gutenberg blocks
- * Version: 1.1.0
+ * Version: 1.1.1
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  *

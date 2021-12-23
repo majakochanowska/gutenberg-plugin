@@ -38,13 +38,10 @@ const externals = [
 	} ),
 	{
 		wp: 'wp',
-		ga: 'ga', // Old Google Analytics.
-		gtag: 'gtag', // New Google Analytics.
 		react: 'React', // React itself is there in Gutenberg.
 		jquery: 'jQuery', // import $ from 'jquery'; // Use jQuery from WP after enqueuing it.
 		'react-dom': 'ReactDOM',
 		lodash: 'lodash', // Lodash is there in Gutenberg.
-		cgbGlobal: 'cgbGlobal', // import globals from 'cgbGlobal'; // Localized data.
 	}
 );
 
