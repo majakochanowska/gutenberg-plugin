@@ -10,3 +10,4 @@
  */
 
 import './accordion/block.js';
+import './button/block.js';

@@ -1,0 +1,106 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+.modal {
+  visibility: hidden;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  outline: 0;
+  opacity: 0;
+  transition: all 0.15s linear;
+}
+
+.modal--open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal--open .modal__dialog {
+  transform: translate(0, 0);
+}
+
+.modal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal__dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+  z-index: 1;
+  transform: translate(0, -25%);
+  transition: all 0.3s ease-out;
+}
+
+@media (min-width: 768px) {
+  .modal__dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+}
+
+.modal__content {
+  position: relative;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .modal__content {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.modal__body {
+  position: relative;
+  padding: 15px;
+}
+
+.modal__iframe {
+  position: relative;
+  display: block;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.modal__iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+
+.modal__footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #f8f8f8;
+}
+
+.modal__footer button {
+  border-radius: 4px;
+}
