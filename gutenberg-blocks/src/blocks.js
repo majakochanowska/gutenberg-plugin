@@ -11,3 +11,4 @@
 
 import './accordion/block.js';
 import './button/block.js';
+import './stars-rating/block.js';
