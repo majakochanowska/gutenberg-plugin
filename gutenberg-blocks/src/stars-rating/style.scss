@@ -1,0 +1,10 @@
+.wp-block-gutenberg-stars-rating {
+
+    img {
+        width: 20px;
+
+        &:not(:last-child) {
+            margin-right: 8px;            
+        }
+    }
+}

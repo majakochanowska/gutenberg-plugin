@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-const VERSION = '1.1.1';
+const VERSION = '1.2.0';
 
 /**
  * Enqueue Gutenberg block assets for both backend.
@@ -38,6 +38,9 @@ function enqueue_backend_assets() {
 
 	// Register block editor styles for backend.
 	wp_enqueue_style( 'gutenberg-blocks-editor-css', esc_url( plugins_url( 'dist/blocks.editor.build.css', dirname( __FILE__ ) ) ), array( 'wp-edit-blocks' ), VERSION );
+
+	// Localize main plugin directory.
+	wp_localize_script( 'gutenberg-blocks-js', 'gutenbergBlocks', array( 'pluginsUrl' => plugins_url( '', dirname( __FILE__ ) ) ) );
 }
 
 /**
