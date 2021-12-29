@@ -10,3 +10,7 @@ html{scroll-behavior:smooth}.modal{visibility:hidden;overflow:hidden;position:fi
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/stars-rating/style.scss ***!
   \****************************************************************************************************************************************************************/
 .wp-block-gutenberg-stars-rating img{width:20px}.wp-block-gutenberg-stars-rating img:not(:last-child){margin-right:8px}
+/*!************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/percentage-indicator/style.scss ***!
+  \************************************************************************************************************************************************************************/
+.wp-block-gutenberg-percentage-indicator svg{display:block;max-height:180px}@media(max-width: 599px){.wp-block-gutenberg-percentage-indicator svg{margin:0 auto}}.wp-block-gutenberg-percentage-indicator__circle-background{fill:none;stroke:#f2f2f2;stroke-width:2.5}.wp-block-gutenberg-percentage-indicator__circle{fill:none;stroke-width:2.5;stroke-linecap:round}.wp-block-gutenberg-percentage-indicator__percentage{font-size:.7rem;font-weight:bold;fill:#073590;text-anchor:middle}

@@ -1,0 +1,31 @@
+@import '../common.scss';
+
+.wp-block-gutenberg-percentage-indicator {
+	svg {
+		display: block;
+		max-height: 180px;
+
+		@media ( max-width: 599px ) {
+			margin: 0 auto;
+		}
+	}
+
+	&__circle-background {
+		fill: none;
+		stroke: $grey;
+		stroke-width: 2.5;
+	}
+
+	&__circle {
+		fill: none;
+		stroke-width: 2.5;
+		stroke-linecap: round;
+	}
+
+	&__percentage {
+		font-size: 0.7rem;
+		font-weight: bold;
+		fill: $blue;
+		text-anchor: middle;
+	}
+}
