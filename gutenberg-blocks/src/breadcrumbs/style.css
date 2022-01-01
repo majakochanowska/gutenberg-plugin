@@ -1,0 +1,44 @@
+.wp-block-gutenberg-breadcrumbs {
+  margin: 40px auto;
+  padding: 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+
+@media (max-width: 599px) {
+  .wp-block-gutenberg-breadcrumbs {
+    margin: 16px auto;
+  }
+}
+
+.wp-block-gutenberg-breadcrumbs ul {
+  display: flex;
+  padding-inline-start: 0;
+  list-style: none;
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.wp-block-gutenberg-breadcrumbs ul li {
+  margin-right: 13px;
+}
+
+.wp-block-gutenberg-breadcrumbs ul li a, .wp-block-gutenberg-breadcrumbs ul li.wp-block-gutenberg-breadcrumbs__parent {
+  font-size: 12px;
+  color: #525252;
+  text-decoration: none;
+}
+
+.wp-block-gutenberg-breadcrumbs ul li:not(:last-child)::after {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-left: 10px;
+  margin-bottom: 1px;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  transform: rotate(-45deg);
+}
