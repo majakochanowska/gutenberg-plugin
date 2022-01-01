@@ -3,7 +3,7 @@
  * Plugin Name: Gutenberg Blocks
  * Author: Maja Kochanowska
  * Description: Plugin with Gutenberg blocks
- * Version: 1.1.1
+ * Version: 1.4.0
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  *
@@ -19,3 +19,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Block Initializer.
  */
 require_once plugin_dir_path( __FILE__ ) . 'src/init.php';
+
+/**
+ * Server side rendered blocks
+ */
+require_once plugin_dir_path( __FILE__ ) . 'src/breadcrumbs/block.php';
