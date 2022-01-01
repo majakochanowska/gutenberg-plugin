@@ -1,5 +1,5 @@
 # gutenberg-plugin
-Plugin contains several custom Gutenberg blocks and core blocks modification:
+Plugin contains several custom Gutenberg blocks and core blocks modifications:
 - Accordion block
 - Circle percentage indicator block
 - Stars rating block
