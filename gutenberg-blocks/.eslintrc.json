@@ -32,6 +32,7 @@
 		"unicorn/prefer-module": "off",
 		"unicorn/explicit-length-check": "off",
 		"@wordpress/no-global-event-listener": "off",
-		"linebreak-style": "off"
+		"linebreak-style": "off",
+		"unicorn/no-null": "off"
 	}
 }
