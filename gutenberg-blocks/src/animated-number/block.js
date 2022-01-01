@@ -1,4 +1,4 @@
-import { animateNumberElements } from './frontend.js';
+import { animateNumberElements } from './functions.js';
 import { Icon, arrowUp as arrowUpIcon } from '@wordpress/icons';
 
 const { registerFormatType, toggleFormat } = wp.richText;
