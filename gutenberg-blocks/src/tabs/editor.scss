@@ -1,0 +1,31 @@
+@import '../common.scss';
+
+.editor-styles-wrapper {
+	.wp-block-gutenberg-tabs__headers {
+		margin: 0;
+
+		ul {
+			padding-left: 0;
+		}
+	
+		.wp-block-gutenberg-tabs__header {
+			position: relative;
+	
+			.wp-block-gutenberg-tabs__remove {
+				position: absolute;
+				right: 5px;
+				top: 0;
+				width: 20px;
+				color: #2e2e2e;
+			}
+	
+			&--add {
+				background: none;
+				border: none;
+				flex-grow: 0;
+				border-bottom: 1px solid $grey;
+			}
+		}
+	}
+	
+}
