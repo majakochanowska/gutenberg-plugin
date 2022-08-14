@@ -4,4 +4,5 @@
 
 import './accordion/frontend.js';
 import './button/frontend.js';
+import './animated-number/frontend.js';
 import './tabs/frontend.js';

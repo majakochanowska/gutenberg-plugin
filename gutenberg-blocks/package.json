@@ -18,6 +18,7 @@
     "@babel/register": "^7.12.1",
     "@babel/runtime": "^7.12.5",
     "@wordpress/eslint-plugin": "^9.0.1",
+    "@wordpress/icons": "^6.1.1",
     "autoprefixer": "^10.2.5",
     "babel-loader": "^8.2.2",
     "core-js": "^3.8.3",

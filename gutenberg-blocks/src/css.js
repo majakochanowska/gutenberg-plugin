@@ -5,5 +5,7 @@ import './stars-rating/style.scss';
 import './percentage-indicator/style.scss';
 import './breadcrumbs/style.scss';
 import './breadcrumbs/editor.scss';
+import './animated-number/style.scss';
+import './animated-number/editor.scss';
 import './tabs/style.scss';
 import './tabs/editor.scss';
