@@ -1,0 +1,53 @@
+.wp-block-gutenberg-tabs__headers {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+  overflow: auto;
+}
+
+.wp-block-gutenberg-tabs__headers .wp-block-gutenberg-tabs__header {
+  flex-grow: 1;
+  padding: 20px 12px 24px;
+  border: 1px solid #f2f2f2;
+  background-color: #f8f8f8;
+  border-radius: 4px 4px 0 0;
+  white-space: nowrap;
+}
+
+.wp-block-gutenberg-tabs__headers .wp-block-gutenberg-tabs__header button {
+  width: 100%;
+  background: none !important;
+  border: none;
+  outline: none;
+  color: #2e2e2e !important;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.wp-block-gutenberg-tabs__headers .wp-block-gutenberg-tabs__header--active {
+  background-color: #fff;
+  border-top: 4px solid #f1c933;
+  border-bottom: 0;
+}
+
+.wp-block-gutenberg-tabs__headers .wp-block-gutenberg-tabs__header--active button {
+  color: #073590 !important;
+  font-weight: 900;
+}
+
+.wp-block-gutenberg-tabs__content {
+  padding: 40px;
+  border: 1px solid #f2f2f2;
+  border-top: 0;
+  border-radius: 0 0 4px 4px;
+}
+
+.wp-block-gutenberg-tabs__content .wp-block-gutenberg-tab {
+  display: none;
+}
+
+.wp-block-gutenberg-tabs__content .wp-block-gutenberg-tab--active {
+  display: block;
+}
